@@ -1,0 +1,2 @@
+class SKill < ApplicationRecord
+end
