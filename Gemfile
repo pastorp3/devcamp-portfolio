@@ -60,3 +60,4 @@ gem 'sprockets-rails', '~> 3.2'
 gem "autoprefixer-rails"
 gem 'jquery-rails'
 gem 'jose_pedraza_view_tool', git: 'https://github.com/pastorp3/jose_pedraza_view_tool'
+gem 'petergate', '~> 2.0', '>= 2.0.1'
