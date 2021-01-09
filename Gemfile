@@ -59,3 +59,4 @@ gem 'bootstrap', '~> 5.0.0.beta1'
 gem 'sprockets-rails', '~> 3.2'
 gem "autoprefixer-rails"
 gem 'jquery-rails'
+gem 'jose_pedraza_view_tool', git: 'https://github.com/pastorp3/jose_pedraza_view_tool'
