@@ -3,6 +3,7 @@ class PortfoliosController < ApplicationController
   skip_before_action :verify_authenticity_token 
   layout "portfolio"
   access all: [:show, :index], user: {except: [:destroy, :create, :new, :update, :edit, :sort]}, site_admin: :all
+  
 	def index
 		@portfolio_items = Portfolio.by_position
 	end
@@ -63,7 +64,7 @@ class PortfoliosController < ApplicationController
   private 
 
   def portfolio_params
-    params.require(:portfolio).permit(:title, :subtitle, :body, technologies_attributes: [:name])
+    params.require(:portfolio).permit(:title, :subtitle,:thumb_image, :main_image, :body, technologies_attributes: [:name])
   end
 
    def set_portfolio_item
